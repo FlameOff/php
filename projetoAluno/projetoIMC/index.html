@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMC PACHECO</title>
+</head>
+<style>
+    body{
+        background: black;
+        color: aliceblue;
+    }
+    form{
+        text-decoration: underline;
+    }
+</style>
+<body>
+    <hr><br>
+
+
+    <h1>Site: IMC Calculator </h1>
+    <br>
+
+    <form action="processaDados.php" method="post">
+        <label>IMC</label>
+        <br>
+        <br>
+        <label>Peso</label>
+        <br>
+        <input type="number" id="peso" name="peso" step="0.1" max="1000" required>
+        <br><br>
+        <label>Altura</label>
+        <br>
+        <input type="number" id="altura" name="altura" step="0.1" min="0.1" required>
+        <br><br>
+        <input type="submit" value="Calcular">
+    </form>
+    
+    <br><hr>
+
+    <h2>Tabela de Faixa IMC</h2>
+    <br>
+
+    <table border="1px">
+        <th rowspan="1" colspan="1">&nbsp;&nbsp;&nbsp; Faixa IMC &nbsp;&nbsp;&nbsp;&nbsp;</th><th rowspan="1" colspan="1">&nbsp;&nbsp;&nbsp;&nbsp; Grau de Obesidade &nbsp;&nbsp;&nbsp;&nbsp;</th>
+        <tr>
+            <td>IMC < 18</td>
+            <td>Baixo Peso</td>
+        </tr>
+        <tr>
+            <td> IMC de 18 até 24.9 </td>
+            <td>Peso adequado</td>
+        </tr>
+        <tr>
+            <td> IMC de 25 até 29.9 </td>
+            <td>Sobrepeso</td>
+        </tr>
+        <tr>
+            <td> IMC de 30 até 34.9 </td>
+            <td>Obesidade grau I</td>
+        </tr>
+        <tr>
+            <td> IMC de 35 até 39.9 </td>
+            <td>Obesidade grau II</td>
+        </tr>
+        <tr>
+            <td> IMC a partir de 40 </td>
+            <td>Obesidade grau III</td>
+        </tr>
+            
+    </table>
+    <hr><br>
+</body>
+</html>
